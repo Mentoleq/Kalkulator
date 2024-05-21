@@ -16,7 +16,7 @@ public class Main {
                 System.out.println("Proszę podać pierwszą liczbę: ");
                 firstNumber = scanner.nextDouble();
                 validInput = true;
-            }catch (NumberFormatException e){
+            }catch (InputMismatchException e){
                 System.out.println("Błąd: Wprowadzaono złą wartość");
                 scanner.next();
             }
@@ -40,7 +40,7 @@ public class Main {
                 System.out.println("Proszę podać drugą liczbę: ");
                 secondNumber = scanner.nextDouble();
                 validInput = true;
-            }catch (NumberFormatException e){
+            }catch (InputMismatchException e){
                 System.out.println("Błąd: Wprowadzaono złą wartość");
                 scanner.next();
             }
